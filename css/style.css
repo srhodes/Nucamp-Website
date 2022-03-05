@@ -37,3 +37,9 @@ footer{
 .jumbotron {
     margin: 0;
 }
+
+.tab-content{
+    border: 1px black #ddd;
+    border-top: none;
+    padding: 10px
+}
