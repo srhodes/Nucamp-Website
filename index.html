@@ -37,7 +37,8 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-info btn-lg text-nowrap" role="button" data-toggle = "modal" data-target="#reserveModal" title="Reserve Campsite Title">Reserve Campsite</a>
+                    <!-- <a class="btn btn-info btn-lg text-nowrap" role="button" title="Reserve Campsite Title"></a> -->
+                    <button role="button" class="btn btn-primary" id="reserveButton">Reserve Campsite</button>
                 </div>
             </div>
         </div>
@@ -119,7 +120,7 @@
                     Contact</a></li>
         </ul>
             <span class="navbar-text ml-auto">
-                <a role="button" data-toggle="modal" data-target="#loginModal">
+                <a role="button" id="loginButton">
                     <i class="fa fa-sign-in"></i>login
                 </a>
             </span>
@@ -323,7 +324,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script>
+    <script src="js/scripts.js">
         // $('#reserveModal').modal(options)
 
         $(function(){
@@ -340,6 +341,20 @@
                 }
             });
         });
+
+      
+
+        // $(function(){
+        //     $('#reserveButton').click(function() {
+        //         $("#reserveModal").modal('show');
+        //     });
+        // });
+
+        // $(function(){
+        //     $('button').click(function() {
+        //         $("#loginButton").modal('show');
+        //     });
+        // });
     </script>
 
 </body>
